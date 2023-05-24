@@ -1,0 +1,292 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 52px 104px 156px 238px 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.encabezado {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    padding-top: 10px;
+}
+
+.menu {
+    grid-column: 6 / 7;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.links {
+    grid-column: 1 / 2;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+}
+.link1{
+    grid-column: 1 / 2;
+}
+.link2{
+    grid-column: 2 / 3;
+}
+.botones {
+    grid-column: 2 / 3;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-row: auto;
+}
+
+.acceder {
+    grid-column: 2 / 3;
+}
+
+button {
+    background-color: #4683ea;
+    border: none;
+    font-style: normal;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#acceder {
+    color: white;
+}
+
+.tooltip {
+    grid-column: 1 / 2;
+    position: relative;
+    display: inline-block;
+    border-top: 1px black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 25%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: small;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row: 2 / 3;
+}
+
+.buscador {
+    grid-row: 3 / 4;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    padding-top: 20px;
+}
+form{
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+}
+.entrada{
+    display: grid;
+    grid-template-columns: 18px 37px auto 74px 18px;
+    grid-template-rows: auto;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+}
+.entrada:hover{
+    box-shadow: 1px 1px 1px 1px lightgrey;
+}
+.lupa{
+    grid-column: 2 / 3;
+}
+.input{
+    grid-column: 3 / 4;
+}
+input{
+    border: none;
+    height: 37px;
+    width: 300px;
+}
+input::after{
+    border: none;
+}
+.iconos{
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.microfono{
+    grid-column: 1 / 2;
+}
+.camara{
+    grid-column: 2 / 3;
+}
+.botonesBuscar{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    padding-top: 30px;
+    align-items: center;
+}
+.buscarGoogle{
+    grid-column: 1 / 2;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+}
+.buscarSuerte{
+    grid-column: 2 / 3;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+}
+
+#search {
+    color: black;
+}
+#lucky {
+    color: black;
+}
+
+#search:hover {
+    color: black;
+    text-decoration: none;
+}
+#lucky:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.buscadores:hover {
+    display: grid;
+    width: auto;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #d8d9da;
+}
+
+.buscadores{
+    display: grid;
+    width: auto;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+}
+.vacio {
+    grid-row: 4 / 5;
+}
+
+.pie {
+    background-color: #e8e9ea;
+    grid-row: 5 / 6;
+    color: #88898a;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.paises{
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    border-bottom: 1px solid #d8d9da;
+    align-items: center;
+    justify-items: left;
+}
+.pais{
+    color: #88898a;
+    padding-left: 30px;
+}
+.links2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-row: 2 / 3;
+    align-items: center;
+    justify-items: center;
+}
+.link01{
+    display: grid;
+    grid-column: 1 / 2;
+}
+.link02{
+    display: grid;
+    grid-column: 2 / 3;
+}
+.link03{
+    display: grid;
+    grid-column: 3 / 4;
+}
+.link04{
+    display: grid;
+    grid-column: 4 / 5;
+}
+.link08{
+    display: grid;
+    grid-column: 8 / 9;
+}
+.link09{
+    display: grid;
+    grid-column: 9 / 10;
+}
+.link10{
+    display: grid;
+    grid-column: 10 / 11;
+}
+.footer-link{
+    color: #88898a;
+}
+.footer-link:visited{
+    color: #88898a;
+}
